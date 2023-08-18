@@ -1,7 +1,6 @@
 import streamlit as st
 
-st.title("Welcome to Health Universe!")
-st.write("This is a sample application.")
+st.title("Welcome to our ECG Tech in a Box!")
+st.write("Right now the application just lets you upload as zip file.")
 
-alarm_clock = st.slider('hour', 0, 23, 17) # min: 0h, max: 23h, default: 17h
-st.header(alarm_clock) # print in large text
+image_file = st.file_uploader('Upload zip file with the ECG data', type=['zip'])
